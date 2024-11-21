@@ -4,7 +4,7 @@ Zombie* zombieHorde(int N, std::string name);
 
 int main()
 {
-	int size = 5;
+	int size = 3;
 	
 	Zombie *d;
 	d = zombieHorde(size, "joe");

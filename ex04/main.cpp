@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 {
 	if (argc != 4)
 	{
-		std::cerr << "program require 3 arguments";
+		std::cerr << "program require 3 arguments\n";
 		return (1);
 	}
 	std::ifstream readFile(argv[1]);
