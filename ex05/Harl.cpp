@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Harl.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aerrfig <aerrfig@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/16 10:45:00 by aerrfig           #+#    #+#             */
+/*   Updated: 2024/12/16 11:14:34 by aerrfig          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Harl.hpp"
 
 void Harl::debug(void)
@@ -22,7 +34,7 @@ void Harl::error(void)
 
 void	Harl::complain(std::string level)
 {
-	std::string arr[] = {"debug", "info", "warning", "error"};
+	std::string arr[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	void    	(Harl::*func[])( void ) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 
 	for (size_t i = 0; i < 4; i++)

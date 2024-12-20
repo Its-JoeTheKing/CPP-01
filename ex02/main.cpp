@@ -1,18 +1,27 @@
-#include "iostream"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aerrfig <aerrfig@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/15 15:46:05 by aerrfig           #+#    #+#             */
+/*   Updated: 2024/12/15 15:46:06 by aerrfig          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-using std::cout;
-using std::string;
+#include "iostream"
 
 int main()
 {
-	string f = "HI THIS IS BRAIN";
-	string *stringPTR = &f;
-	string &stringREF = f;
+	std::string f = "HI THIS IS BRAIN";
+	std::string *stringPTR = &f;
+	std::string &stringREF = f;
 
-	cout << &f << "\n";
-	cout << stringPTR << "\n";
-	cout << &stringREF << "\n";
-	cout << f << "\n";
-	cout << *stringPTR << "\n";
-	cout << stringREF << "\n";
+	std::cout << &f << "\n";
+	std::cout << stringPTR << "\n";
+	std::cout << &stringREF << "\n";
+	std::cout << f << "\n";
+	std::cout << *stringPTR << "\n";
+	std::cout << stringREF << "\n";
 }

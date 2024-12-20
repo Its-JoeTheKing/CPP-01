@@ -1,15 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aerrfig <aerrfig@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/20 15:11:02 by aerrfig           #+#    #+#             */
+/*   Updated: 2024/12/20 15:11:02 by aerrfig          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Harl.hpp"
 
-int main()
+int main(int ac, char *av[])
 {
 	Harl d;
-
-	d.complain("debug");
-	std::cout << "\n---------------\n";
-	d.complain("info");
-	std::cout << "\n---------------\n";
-	d.complain("warning");
-	std::cout << "\n---------------\n";
-	d.complain("error");
-	std::cout << "\n---------------\n";
+	if (ac == 2)
+		d.complain(av[1]);
+	return (0);
 }
